@@ -1,112 +1,115 @@
 import Image from "next/image";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main className="w-full bg-[#BFBFBF]">
+      <div className="wrapper mx-auto lg:max-w-[1440] lg:px-20">
+        <Header />
+        <section className=" text-black top-section flex flex-col mt-24 p-6 lg:flex-row lg:p-0 lg:py-4">
+          <div className="left order-2 flex flex-col gap-12 mt-6 lg:order-1 lg:px-2 lg:w-2/4 lg:mt-0">
+            <h1 className="text-2xl text-center font-bold lg:text-left lg:text-4xl ">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p className="text-center lg:text-left">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <div className="flex flex-col items-center gap-4 lg:flex-row">
+              <input
+                type="text"
+                className="px-8 py-3 border border-blue-900 rounded lg:border-gray-300"
+                placeholder="Enter your email.."
+              />
+              <button className="bg-blue-700 px-8 py-3 w-[100%] text-white font-bold rounded-sm hover:bg-blue-400">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div className="right order-1 lg:order-2 lg:w-2/4">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/images/illustration-1.svg"
+              alt="illustration1"
+              width={600}
+              height={600}
             />
-          </a>
+          </div>
+        </section>
+
+        <section className="text-black middle-section flex flex-col mt-24 lg:flex-row">
+          <div className="left order-2 p-6 lg:order-1 lg:mt-16 md:mt-16 xl:mt-32">
+            <div className="heading mt-24 mb-8 font-bold text-center text-sm">
+              <h2 className="text-3xl">Stay productive, wherever you are</h2>
+            </div>
+            <p className="mb-8 text-sm">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p className="mb-8 text-sm">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div className="flex gap-2 justify-center items-center  border-2 border-r-0 border-t-0 border-l-0 border-b-green-600 pb-2 w-fit mx-auto">
+              <span className="text-green-600"> See how Fylo works</span>
+              <img src="/images/icon-arrow.svg" alt="arrow" />
+            </div>
+            <div className="shadow-xl my-10 py-6 px-4 rounded-xl bg-white">
+              <img src="/images/icon-quotes.svg" alt="quotes" className="w-5" />
+              <p className="leading-7 text-sm mt-6">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div className="card-footer flex gap-2 items-center mt-6">
+                <img
+                  src="/images/avatar-testimonial.jpg"
+                  alt="avatar"
+                  className="rounded-[50%] "
+                />
+                <div>
+                  <span className="font-bold">Kyle Burton</span>
+                  <p className="text-xs">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="right order-1 px-6 py-24 mt-[1.6rem] lg:order-2 lg:mt-16 xl:mt-32">
+            <Image
+              src="/images/illustration-2.svg"
+              alt="illustration2"
+              width={600}
+              height={600}
+
+            />
+          </div>
+        </section>
+        <section className="bg-[#707070] flex gap-6 flex-col p-8 items-center text-center lg:gap-12 lg:flex-row lg:py-16 lg:text-start">
+          <div className="left mt-6 text-white lg:order-1 lg:w-2/4 lg:p-4">
+            <h3 className="font-bold mb-6 lg:text-2xl">
+              Get early access today
+            </h3>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div className="right flex flex-col gap-3 pb-6 lg:order-2 lg:p-4 lg:w-2/4">
+            <input
+              type="text"
+              className="px-40 py-2 placeholder:text-gray-300 rounded-sm w-[100%] lg:block"
+              placeholder="email@example.com"
+            />
+            <button className="bg-blue-600 px-4 py-2 text-white hover:bg-blue-400 lg:w-fit lg:px-8 lg:block lg:shadow-lg">
+              Get Started For Free
+            </button>
+          </div>
+        </section>
+        <div>
+        <Footer />
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );

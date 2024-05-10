@@ -5,7 +5,7 @@ export default function Home() {
     <main className="w-full bg-black overflow-x-hidden ">
       <div className="mx-auto lg:max-w-[1440] lg:px-20">
         <section className=" text-white flex flex-col p-6 lg:flex-row lg:p-0 lg:py-4">
-          <div className="left order-2 flex flex-col gap-12 mt-6 lg:order-1 lg:px-2 lg:w-2/4 lg:mt-0">
+          <div className="order-2 flex flex-col gap-12 mt-6 lg:order-1 lg:px-2 lg:w-2/4 lg:mt-0">
             <h1 className="text-2xl text-center font-bold lg:text-left lg:text-4xl ">
               All your files in one secure location, accessible anywhere.
             </h1>
@@ -18,14 +18,15 @@ export default function Home() {
               <input
                 type="text"
                 className="px-12 py-3 border border-blue-900 rounded lg:border-gray-300"
-                placeholder="Enter your email.."
+                title="Enter your email..."
+                placeholder="Enter your email..."
               />
-              <button className="bg-blue-700 px-6 py-3 w-[100%] text-white font-bold rounded-sm hover:bg-blue-400">
+              <button className="bg-blue-700 px-6 py-3 w-[100%] text-white font-bold rounded-sm hover:bg-blue-400" title="Get Started">
                 Get Started
               </button>
             </div>
           </div>
-          <div className="right order-1 lg:order-2 lg:w-2/4">
+          <div className="order-1 lg:order-2 lg:w-2/4">
             <Image
               src="/images/illustration-1.svg"
               alt="organização de arquivos"
@@ -37,9 +38,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=" middle-section flex flex-col mt-24 lg:flex-row">
-          <div className="left order-2 p-6 lg:order-1 lg:mt-16 md:mt-16 xl:mt-32">
-            <div className="heading mt-24 mb-8 font-bold text-center text-sm">
+        <section className=" flex flex-col mt-24 lg:flex-row">
+          <div className="order-2 p-6 lg:order-1 lg:mt-16 md:mt-16 xl:mt-32">
+            <div className="mt-24 mb-8 font-bold text-center text-sm">
               <h2 className="text-3xl text-white">Stay productive, wherever you are</h2>
             </div>
             <p className="mb-8 text-sm text-white">
@@ -65,7 +66,7 @@ export default function Home() {
                 
               />
 
-              <p className="leading-7 text-sm mt-6 text-black">
+              <p className=" text-sm mt-6 text-black">
                 Fylo has improved our team productivity by an order of
                 magnitude. Since making the switch our team has become a
                 well-oiled collaboration machine.
@@ -86,7 +87,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="right order-1 px-6 py-24 mt-[1.6rem] lg:order-2 lg:mt-16 xl:mt-32">
+          <div className="order-1 px-6 py-24 mt-[1.6rem] lg:order-2 lg:mt-16 xl:mt-32">
             <Image
               src="/images/illustration-2.svg"
               alt="ilustração de produtividade"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex justify-between p-6 mx-auto lg:max-w-[1440] lg:px-20 bg-[#aa97ba] pb-24">
+    <header className="flex justify-between p-6 mx-auto lg:max-w-[1440] lg:px-20 bg-black pb-24">
       <Link href="/">
         <Image
           src="/images/logo.dark.png"

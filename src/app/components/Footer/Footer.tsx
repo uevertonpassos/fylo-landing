@@ -4,15 +4,17 @@ import Image from 'next/image'
 function Footer() {
   return (
     <>
-         <footer className=" p-12 bg-gray-700 text-white lg:px-8 lg:py-16 justify-start">
+         <footer className=" p-12 bg-gray-700 text-white lg:px-8 justify-start">
           <div className="flex flex-col lg:flex-row lg:justify-around lg:items-center lg:mt-6">
             <div className="left lg:self-start lg:py-0 lg:flex lg:flex-col text-black">
               <Image
                 src="/images/logo.dark.png"
                 alt="logo-dark"
+                title='logo-dark'
                 className="lg:mb-5 lg:self-start"
                 width={100}
                 height={100}
+                
               />
               <p className="flex text-white items-center gap-4 pt-6 lg:pt-0">
                 <span>

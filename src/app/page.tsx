@@ -50,9 +50,10 @@ export default function Home() {
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required!
             </p>
-            <div className="flex gap-2 justify-center items-center  border-2 border-r-0 border-t-0 border-l-0 border-b-green-600 pb-2 w-fit mx-auto">
-              <span className="text-green-700"> See how Fylo works</span>
-              <img src="/images/icon-arrow.svg" alt="arrow" />
+            <div className="flex gap-2 justify-center items-center  border-2 border-r-0 border-t-0 border-l-0 border-b-blue-400 pb-2 w-fit mx-auto">
+              <span className="text-blue-400"> See how Fylo works</span>
+              <Image src="/images/icon-arrow.svg" alt="arrow" title="arrow" width={20} height={20} className="text-blue-400"/>
+              
             </div>
             <div className="shadow-xl my-10 py-6 px-4 rounded-xl bg-white">
               <Image

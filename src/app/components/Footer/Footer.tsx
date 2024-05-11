@@ -42,31 +42,31 @@
                 <span>example@fylo.com</span>
               </p>
             </div>
-            <div className="text-white middle my-10 lg:my-0 lg:align-middle lg:py-16">
+            <div className="text-white my-10 lg:my-0 lg:align-middle lg:py-16">
               <ul className="flex flex-col gap-4">
                 <li>
-                  <Link href="/about" title='About'>
+                  <Link href="#" title='About'>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/jobs" title='Jobs'>
+                  <Link href="#" title='Jobs'>
                     Jobs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/press" title='Press'>
+                  <Link href="#" title='Press'>
                     Press
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" title='Blog'>
+                  <Link href="#" title='Blog'>
                     Blog
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="text-white right lg:self-start lg:py-16">
+            <div className="text-white lg:self-start lg:py-16">
               <ul className="flex flex-col gap-4">
                 <li>
                   <Link href="#" title='Contact Us'>

@@ -80,7 +80,7 @@ export default function Home() {
                   height={60}
                   className="rounded-full"
                 />
-                <div>
+                <div className="text-black">
                   <span className="font-bold">Kyle Burton</span>
                   <p className="text-xs">Founder & CEO, Huddle</p>
                 </div>

@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full bg-black overflow-x-hidden ">
-      <div className="mx-auto lg:max-w-[1440] lg:px-20">
-        <section className=" text-white flex flex-col p-6 lg:flex-row lg:p-0 lg:py-4">
+      <div className="mx-auto lg:max-w-[1440] ">
+        <section className=" text-white flex flex-col p-6 lg:flex-row lg:p-20 lg:py-4">
           <div className="order-2 flex flex-col gap-12 mt-6 lg:order-1 lg:px-2 lg:w-2/4 lg:mt-0">
             <h1 className="text-2xl text-center font-bold lg:text-left lg:text-4xl ">
               All your files in one secure location, accessible anywhere.
@@ -22,7 +22,7 @@ export default function Home() {
                 placeholder="Enter your email..."
               />
               <button className="bg-blue-700 px-6 py-3 w-[100%] text-white font-bold rounded-sm hover:bg-blue-400" title="Get Started">
-                Get Started
+                Get Started!
               </button>
             </div>
           </div>

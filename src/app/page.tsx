@@ -75,7 +75,7 @@ export default function Home() {
                 <Image
                   src="/images/avatar-testimonial.jpg"
                   alt="profile testimonial"
-                  title="profile testimonial"
+                  title="profile testimonial testing"
                   width={100}
                   height={60}
                   className="rounded-full"
